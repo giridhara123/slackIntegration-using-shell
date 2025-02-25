@@ -8,7 +8,7 @@ steps:
 
 # 📢 Sending user information as a message to SLACK using incoming webhooks integration
 
-using curl command:
+using curl command:         
 curl -v -X POST '${SLACK_WEBhook url}' \
      -H 'Content-Type: application/json' \
      --data "$(jq -n --arg user "$USERNAME" --arg pass "$PASSWORD" \
