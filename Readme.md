@@ -13,3 +13,5 @@ curl -v -X POST '${SLACK_WEBhook url}' \
      -H 'Content-Type: application/json' \
      --data "$(jq -n --arg user "$USERNAME" --arg pass "$PASSWORD" \
        '{text: "New user has been created!\nUsername: \($user)\nTemporary Password: \($pass)\nPlease reset this password immediately."}')"
+
+![Slack integration](slack.png)
